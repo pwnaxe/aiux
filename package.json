@@ -1,0 +1,61 @@
+{
+  "name": "@aiux/tracker",
+  "version": "1.0.0",
+  "description": "Tracks and analyzes user behavior using Chrome's TextClassifier",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc && rollup -c",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Hub Horizon LLC",
+  "license": "MIT",
+  "keywords": [
+    "UX",
+    "AI",
+    "tracking",
+    "chrome",
+    "textclassifier",
+    "sentiment-analysis",
+    "user-behavior"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiux/tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aiux/tracker/issues"
+  },
+  "homepage": "https://github.com/aiux/tracker#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "react": "^18.2.0",
+    "rimraf": "^4.4.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-dts": "^5.3.0",
+    "typescript": "^5.0.4"
+  }
+}
